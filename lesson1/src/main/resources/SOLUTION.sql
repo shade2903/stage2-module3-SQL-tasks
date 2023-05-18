@@ -1,2 +1,39 @@
+CREATE TABLE student (
+id BIGINT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name VARCHAR (255),
+birthday DATE NOT NULL,
+groupnumber INT NOT NULL
+);
+
+CREATE TABLE subject (
+id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name VARCHAR (255),
+description VARCHAR (255),
+grade INT NOT NULL
+);
+
+CREATE TABLE paymenttype (
+id BIGINT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name VARCHAR (255)
+);
+
+CREATE TABLE payment (
+id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+type_id BIGINT NOT NULL,
+amount DECIMAL NOT NULL ,
+student_id BIGINT NOT NULL,
+payment_date TIMESTAMP NOT NULL,
+FOREIGN KEY (type_id) REFERENCES paymenttype(id),
+FOREIGN KEY (student_id) REFERENCES student(id)
+);
+
+CREATE TABLE mark (
+id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+student_id BIGINT NOT NULL,
+subject_id BIGINT NOT NULL,
+mark INT NOT NULL,
+FOREIGN KEY (student_id) REFERENCES student(id),
+FOREIGN KEY (subject_id) REFERENCES subject(id)
+);
 
 
