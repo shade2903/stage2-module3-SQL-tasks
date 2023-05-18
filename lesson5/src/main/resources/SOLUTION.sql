@@ -1,0 +1,16 @@
+SELECT * FROM PAYMENT WHERE amount > 500;
+
+SELECT * FROM STUDENT WHERE DATEADD (YEAR, -20, CURRENT_DATE) > birthday;
+
+SELECT * FROM STUDENT WHERE groupnumber = 10 AND DATEADD (YEAR, -20, CURRENT_DATE) < birthday;
+
+SELECT * FROM STUDENT WHERE name LIKE 'Mike%' AND groupnumber BETWEEN 4 AND 6;
+
+SELECT * FROM PAYMENT WHERE DATEADD (MONTH, -8, current_date) <= payment_date;
+
+SELECT * FROM STUDENT WHERE name LIKE 'A%';
+
+SELECT * FROM STUDENT WHERE name LIKE 'Roxi%' AND groupnumber = 4 OR name LIKE 'Tallie%' AND groupnumber = 9;
+
+
+
