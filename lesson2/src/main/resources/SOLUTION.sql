@@ -1,0 +1,57 @@
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('John',  '2004-12-31', 1);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Cris',  '2004-10-28', 1);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Carl',  '2003-05-11', 1);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Oliver', '2005-10-10', 2);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('James',  '2004-07-31', 2);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Lukas',  '2004-05-11', 2);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Henry',  '2005-08-21', 2);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Jacob',  '2003-01-31', 3);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Logan',  '2004-12-31', 3);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Lukas',  '2004-05-11', 4);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Henry',  '2005-08-21', 4);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Jacob',  '2003-01-31', 5);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Logan',  '2004-12-31', 5);
+INSERT INTO STUDENT (name, birthday, groupnumber) VALUES ('Oliver', '2005-10-10', 5);
+
+INSERT INTO SUBJECT (name, description, grade) values('Art', 'art', 1);
+INSERT INTO SUBJECT (name, description, grade) values('Music', 'music', 1);
+INSERT INTO SUBJECT (name, description, grade) values('Geography ', 'geography', 2);
+INSERT INTO SUBJECT (name, description, grade) values('History', 'history', 2);
+INSERT INTO SUBJECT (name, description, grade) values('PE', 'pe', 3);
+INSERT INTO SUBJECT (name, description, grade) values('Math', 'math', 3);
+INSERT INTO SUBJECT (name, description, grade) values('Science', 'science', 4);
+INSERT INTO SUBJECT (name, description, grade) values('IT', 'it', 4);
+INSERT INTO SUBJECT (name, description, grade) values('Engenering', 'engenering', 5);
+INSERT INTO SUBJECT (name, description, grade) values('Building', 'building', 5);
+
+INSERT INTO PAYMENTTYPE (name) values ('DAILY');
+INSERT INTO PAYMENTTYPE (name) values ('WEEKLY');
+INSERT INTO PAYMENTTYPE (name) values ('MONTHLY');
+
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (2, 150.0, 1, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (3, 150.0, 4, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (2, 2334.0, 6, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (1, 50.0, 5, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (1, 2334.0, 2, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (1, 2334.0, 3, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (2, 2334.0, 7, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (3, 2334.0, 8, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (2, 2334.0, 9, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (1, 2334.0, 10, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (2, 2334.0, 11, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (2, 2334.0, 12, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (1, 2334.0, 13, '2020-03-27 00:18:05');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values (3, 2334.0, 14, '2020-03-27 00:18:05');
+
+INSERT INTO MARK (student_id, subject_id, mark) values (2, 1, 8);
+INSERT INTO MARK (student_id, subject_id, mark) values (4, 4, 5);
+INSERT INTO MARK (student_id, subject_id, mark) values (5, 3, 9);
+INSERT INTO MARK (student_id, subject_id, mark) values (8, 6, 4);
+INSERT INTO MARK (student_id, subject_id, mark) values (9, 5, 9);
+INSERT INTO MARK (student_id, subject_id, mark) values (1, 2, 9);
+INSERT INTO MARK (student_id, subject_id, mark) values (3, 8, 7);
+INSERT INTO MARK (student_id, subject_id, mark) values (11, 10, 8);
+INSERT INTO MARK (student_id, subject_id, mark) values (7, 9, 8);
+INSERT INTO MARK (student_id, subject_id, mark) values (12, 8, 9);
+INSERT INTO MARK (student_id, subject_id, mark) values (13, 7, 9);
+INSERT INTO MARK (student_id, subject_id, mark) values (14, 8, 8);
