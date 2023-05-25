@@ -1,4 +1,4 @@
-SELECT s.id, s.name, s.birthday, s.groupnumber
+SELECT s.id, s.name, s.description, s.grade
 FROM SUBJECT AS s
          JOIN MARK AS m ON s.id = m.subject_id
 GROUP BY (s.id)
