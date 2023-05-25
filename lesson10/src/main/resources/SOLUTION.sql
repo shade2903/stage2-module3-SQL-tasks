@@ -1,11 +1,5 @@
-SELECT s.id, s.name, s.description, s.grade
-FROM SUBJECT AS s
-         JOIN MARK AS m ON s.id = m.subject_id
-GROUP BY (s.id)
-HAVING Avg(m.mark) > (SELECT Avg(mark) FROM mark);
+SELECT s.id, s.name, s.description, s.grade FROM SUBJECT AS s JOIN
+mark AS m ON s.id = m.subject_id GROUP BY (s.id) HAVING  AVG(m.mark) > (SELECT AVG(mark) FROM mark);
 
-SELECT s.id, s.name, s.birthday, s.groupnumber
-FROM STUDENT AS s
-         JOIN PAYMENT AS p ON s.id = p.student_id
-GROUP BY (s.id)
-HAVING Avg(p.amount) < (SELECT Avg(amount) FROM payment);
+SELECT s.id, s.name, s.birthday, s.groupnumber FROM STUDENT AS s JOIN
+payment AS p ON s.id = p.student_id GROUP BY (s.id) HAVING AVG(p.amount) < (SELECT AVG(amount) FROM payment);
